@@ -45,3 +45,14 @@ scripts/
   query_cli.py                    # CLI search
 app_streamlit.py                  # local UI (optional)
 requirements.txt
+
+
+Generated files (not committed)
+
+The following files are created by build_assets.py and should not be committed:
+
+data/movie_embeddings.npy
+
+data/faiss.index
+
+data/meta.parquet
