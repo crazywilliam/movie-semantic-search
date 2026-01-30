@@ -46,8 +46,9 @@ scripts/
 app_streamlit.py                  # local UI (optional)
 requirements.txt
 
-
+```
 ---
+
 
 ## Setup (Windows / VS Code)
 
@@ -116,7 +117,11 @@ Then open `http://localhost:8501` in your browser.
 This project's learning path and overall approach were inspired by:  
 https://hongtaoh.com/cn/2025/03/16/bert/
 
-I implemented a local-only version and added a CLI + Streamlit demo for easier reproduction.
+I implemented a local-only version and added a Streamlit demo for easier reproduction.
+
+## Demo (Local Streamlit UI)
+
+![Demo](demo.gif)
 
 ---
 
