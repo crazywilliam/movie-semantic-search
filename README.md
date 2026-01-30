@@ -35,25 +35,9 @@ This repo is meant for learning and for a reproducible GitHub project. No paid A
 ---
 
 ## Repository layout
-```text
-movie-semantic-search/
-├── data/
-│   └── tmdb-movies.csv           # input data (required)
-├── src/                          # core modules (embedding, indexing, search)
-├── scripts/
-│   ├── build_assets.py           # build embeddings + FAISS index (one-time)
-│   └── query_cli.py              # CLI search
-├── app_streamlit.py              # local UI (optional)
-├── requirements.txt
-└── README.md
-```
 
-### Generated files (not committed)
-
-These files are created by `build_assets.py` and should stay out of Git history:
 ```text
 data/
-<<<<<<< HEAD
   tmdb-movies.csv                 # input data
 src/                              # core modules (embedding, indexing, search)
 scripts/
@@ -62,34 +46,6 @@ scripts/
 app_streamlit.py                  # local UI (optional)
 requirements.txt
 
-
-Generated files (not committed)
-
-The following files are created by build_assets.py and should not be committed:
-
-data/movie_embeddings.npy
-
-data/faiss.index
-
-data/meta.parquet
-=======
-├── movie_embeddings.npy          # NumPy array of embeddings
-├── faiss.index                   # FAISS index file
-└── meta.parquet                  # Metadata table (title, overview, year, etc.)
-```
-
-**Note**: Add these to `.gitignore`:
-```gitignore
-# Generated assets
-data/movie_embeddings.npy
-data/faiss.index
-data/meta.parquet
-
-# Python
-.venv/
-__pycache__/
-*.pyc
-```
 
 ---
 
@@ -164,7 +120,3 @@ I implemented a local-only version and added a CLI + Streamlit demo for easier r
 
 ---
 
-## License
-
-MIT
->>>>>>> ee56f31 (Add README)
