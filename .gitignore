@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+
+data/movie_embeddings.npy
+data/faiss.index
+data/meta.parquet
+
+.streamlit/
+.DS_Store
